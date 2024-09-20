@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #524C42;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+header {
+    width: 100px;
+    text-align: center;
+    padding: 0 10px 80px 0;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.0rem;
+    color: #dddddd;
+}
+
+.corpo_Cal {
+    border-radius: 50px;
+    box-shadow: 0px 0px 100px #b1adad;
+    overflow: hidden;
+    width: 30%;
+    height: 70%;
+}
+
+.btn {
+    display: grid;
+    grid-template-columns:repeat(5, 1fr);
+    gap: 5px;
+    height: 80%;
+}
+
+#display {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8rem;
+    box-sizing: border-box;
+    background-color: #dddddd;
+    border-radius: 50px;
+}
+
+button {
+    font-size: 25px;
+    background-color: #5f5c57;
+    border: none;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    color: #dddddd;
+    border-radius: 50px;
+}
+
+button:hover {
+    background-color: #4b4033;
+}
+
+button:active {
+    background-color: #3f3a36;
+}
+
+.botao_igual {
+    grid-column: span 2;
+    background-color: rgb(226, 116, 26);
+}
+
+.botao_mais {
+    grid-row: span 2;
+    background-color: rgb(226, 116, 26);
+}
+
+.deletar_Ultimo {
+    background-color: #838383;
+}
+
+.limpar_Display {
+    background-color: #838383;
+}
+
+@media(max-width: 1000px){
+    .corpo_Cal {
+        width: 70%;
+        height: 55%;
+    }
+
+    .texto {
+        font-size: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.corpo_Cal {
+    animation: fadeIn 2.1s ease-out;
+}
